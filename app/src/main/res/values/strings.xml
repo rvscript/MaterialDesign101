@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MaterialDesign101</string>
+    <string name="page_title">Title Example</string>
 </resources>
