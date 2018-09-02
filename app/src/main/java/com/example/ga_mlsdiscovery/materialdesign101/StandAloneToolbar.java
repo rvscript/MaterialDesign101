@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class StandAloneToolbar extends AppCompatActivity {
@@ -19,7 +20,12 @@ public class StandAloneToolbar extends AppCompatActivity {
         mToolbar.setTitle("Standalone Toolbar !");
         mToolbar.setSubtitle("by Joe Blo");
         mToolbar.setNavigationIcon(R.drawable.back_button);
-
+        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
         //set compatability for the elevation property
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             mToolbar.setElevation(10f);
@@ -54,5 +60,11 @@ public class StandAloneToolbar extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
     }
 }
