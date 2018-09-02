@@ -1,11 +1,33 @@
 <resources>
 
+    <style name="AppMaterialTheme" parent="SuperMaterialTheme">
+        <!--For Versions below v21 customize your theme here-->
+    </style>
+
     <!-- Base application theme. -->
-    <style name="SuperMaterialTheme" parent="Theme.AppCompat">
+    <style name="SuperMaterialTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorControlHighlight">#edea0d</item>
+        <item name="colorButtonNormal">#f955f3</item>
+        <item name="colorControlActivated">#0cf427</item>
+    </style>
+
+    <!--Toolbar theme-->
+    <style name="StandAloneToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!--Text color of tool bar title-->
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--3 dots icon-->
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <!--Pop up menu theme-->
+    <style name="StandAlonePopUpTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/overflowMenuBg</item>
+        <item name="android:textColor">@color/grey_800</item>
     </style>
 
 </resources>

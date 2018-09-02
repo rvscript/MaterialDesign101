@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MaterialDesign101</string>
+    <string name="page_title">Title Example</string>
+    <string name="save">Save</string>
+    <string name="settings">Settings</string>
+    <string name="mail">Mail</string>
+    <string name="search">Search</string>
+    <string name="help">Help</string>
 </resources>
